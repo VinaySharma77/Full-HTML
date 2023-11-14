@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>Creating Hidden Fields</title>
+</head>
+<body>
+<h2>Program to create hidden fields in forms.</h2>
+<form name="form1">
+	<b>Please enter some data in Textbox and Click on button to show the hidden text.</b><br>
+	<input type="hidden" name="backup" value="This is original text"><br>
+	<input type="text" name="Textbox" value="This is douplicate text"><br>
+	<input type="button" value="Show hidden text" onClick="hidden_data()"> 
+</form>
+<script>
+function hidden_data(){
+	document.form1.Textbox.value = document.form1.backup.value;
+}
+</script>
+</body>
+</html>
